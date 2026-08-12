@@ -1,0 +1,34 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+crash.log
+crash.*.log
+
+# Terraform lock file
+# Keep this file committed for provider version consistency
+# .terraform.lock.hcl
+
+# Sensitive files
+.env
+.env.*
+*.pem
+*.key
+*.secret
+
+# AWS credentials
+.aws/
+credentials
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
