@@ -61,3 +61,41 @@ Subnet         Subnet     Subnet        Subnet
                        │
                     Internet
 🛠️ Technologies
+| Technology | Purpose |
+|---|---|
+| AWS | Cloud Infrastructure |
+| Terraform | Infrastructure as Code |
+| VPC | Network Architecture |
+| IAM | Identity & Access Management |
+| Security Groups | Network Security |
+| CloudWatch | Monitoring & Observability |
+| GitHub | Source Control |
+
+## 📁 Project Structure
+
+The project follows a modular Terraform architecture:
+
+```text
+terraform-aws-production-infrastructure/
+│
+├── README.md
+├── architecture/
+│   └── architecture.md
+│
+├── terraform/
+│   ├── main.tf
+│   ├── providers.tf
+│   ├── variables.tf
+│   ├── outputs.tf
+│   │
+│   ├── modules/
+│   │   ├── vpc/
+│   │   ├── security/
+│   │   ├── iam/
+│   │   └── monitoring/
+│   │
+│   └── environments/
+│       ├── dev/
+│       └── prod/
+│
+└── .gitignore
